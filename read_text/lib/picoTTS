@@ -1,0 +1,5 @@
+#!/bin/bash
+
+pico2wave -l fr-FR -w /tmp/out.wav "$1"
+aplay -q /tmp/out.wav
+rm /tmp/out.wav
